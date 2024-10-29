@@ -1,0 +1,22 @@
+<div class="face-snap-card">
+    <h2>{{ faceSnap.title | titlecase }}</h2>
+<button (click)="onViewFaceSnap()">VIEW</button>
+
+    <!-- @if (faceSnap.location) {
+        <p>Localisation : {{ faceSnap.location }}</p>
+    } @else {
+        <p>Localisation non spécifiée</p>
+    }
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    <p>{{ faceSnap.description }}</p>
+    <p>FaceSnap créee le {{ faceSnap.createdAt | date: 'd MMM YYYY' }}</p>
+    <p>
+        <button (click)="onSnap()" [ngClass]="{ 'snapped': userHasSnapped }">{{ buttonText }}</button>
+        <span [ngStyle]="{color: 'rgb(0,'+ faceSnap.snaps +',0)'}">❤️{{ faceSnap.snaps }}</span>
+    </p>
+    <!-- 
+    <p>{{ 8556620.842 | number: '1.0-0' }}</p>
+    <p>{{ 0.74624 | percent: '1.4-5' }}</p>
+    <p>{{ 99.742 | currency: 'XOF' : 'code' : '1.0-0' }}</p> 
+    -->
+</div>
